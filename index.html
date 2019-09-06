@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 	<style>
     *{margin: 0; padding: 0;}
     a{color: #333; text-decoration: none;}
+	ul, li{list-style: none;}
+	
     .wrap{
       width: 100%; height: 100%;
       position: fixed;
@@ -20,18 +22,33 @@
         background: url(./images/main_bg.jpg) no-repeat center /cover;
       }
       .wrap .main_box{
-        width:60%; height: auto;
+        width:70%; height: auto;
         position: absolute;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
       }
 
       nav{
-        width: 50%; height: 50px;
+        width: 30%; height: auto;
         margin: 0 auto;
-        text-align: center;
         font-family: 'Righteous', cursive;
       }
+			.icon{
+				padding: 0 10px;
+				text-align: right;
+			}
+			.icon1{
+				width: 15%; height: auto;
+			}
+			.icon2{
+				width: 15%; height: auto;
+			}
+			.icon3{
+				width: 15%; height: auto;
+			}
+			.icon4{
+				width: 15%; height: auto;
+			}
 
       #intro{
         width: 66.66%; height: 400px;
@@ -40,20 +57,32 @@
         box-sizing: border-box;
         background: rgba(255, 255, 255, 0.3);
       }
-        h1{font-family: 'Righteous', cursive; }
-        #text{font-family: 'Alegreya Sans', sans-serif;}
-      #pic{
+			h1{font-family: 'Righteous', cursive; }
+			#text{font-family: 'Alegreya Sans', sans-serif;}
+      
+	  #pic{
         width:33.33%; height: 400px;
         float: left;
+		background: url(./images/main_pic.jpg) center;
+		transition: 1s;
       }
-        img{width: 100%; height: auto;}
+	  
+		#pic:hover{
+			background: url(./images/h_main_pic.jpg) center /cover;
+		}	  
+     
       footer{
         width: 33.33%; height: 50px;
         margin: 0 auto;
         clear:both;
-        font-size: 10px; text-align: center;
-        font-family: font-family: 'Alegreya Sans', sans-serif;
+		position: relative;
       }
+	   footer h5{
+			position: absolute;
+			top: 16px;
+			font-family: 'Alegreya Sans', sans-serif;
+			text-align: center;
+	   }
 	</style>
 </head>
 <body>
@@ -61,23 +90,17 @@
     <div class="main_bg"></div>
     <div class="main_box">
       <nav>
-        <a href="#"><span>HOME</span></a>
-        <a href="#"><span>STUDY</span></a>
-        <a href="#"><span>DIARY</span></a>
+        <a href="#"><img class="icon icon1" src="./images/icon_home.png" alt=""></a>
+        <a href="#"><img class="icon icon2" src="./images/icon_study.png" alt=""></a>
+        <a href="#"><img class="icon icon3" src="./images/icon_chat.png" alt=""></a>
+        <a href="#"><img class="icon icon4" src="./images/icon_design.png" alt=""></a>
       </nav>
       <section id="intro">
-        <h1>BUZZ U IN</h1></br></br>
+        <h1>HELLO WORLD</h1></br></br>
         <p id="text">A chapter of learning</p>
       </section>
-      <section id="pic">
-        <article class="">
-          <img id="img1" src="./images/main_pic.jpg" alt="">
-          <img id="img2" src="./images/main_pic.jpg" alt="">
-          <img id="img3" src="./images/main_pic.jpg" alt="">
-        </article>
-
-      </section>
-      <footer>@buzzuin redtigerv@gmall.com</footer>
+      <section id="pic">  </section>
+      <footer><h5>Copyright &copy;2019 HELLO WORLD All right reserved.</h5></footer>
     </div>
   </div>
 
