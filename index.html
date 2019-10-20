@@ -1,112 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-	<style>
-    *{margin: 0; padding: 0;}
-    a{color: #333; text-decoration: none;}
-	ul, li{list-style: none;}
-
-    .wrap{
-      width: 100%; height: 100%;
-      position: fixed;
-      left: 0; top: 0;
-    }
-      .wrap .main_bg{
-        width: 100%; height: 100%;
-        position: absolute;
-        left: 0; top: 0;
-        background: url(./images/main_bg.jpg) no-repeat center /cover;
-      }
-      .wrap .main_box{
-        width:70%; height: auto;
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      nav{
-        width: 30%; height: auto;
-        margin: 0 auto;
-        font-family: 'Righteous', cursive;
-      }
-			.icon{
-				padding: 0 10px;
-				text-align: right;
-			}
-			.icon1{
-				width: 15%; height: auto;
-			}
-			.icon2{
-				width: 15%; height: auto;
-			}
-			.icon3{
-				width: 15%; height: auto;
-			}
-			.icon4{
-				width: 15%; height: auto;
-			}
-
-      #intro{
-        width: 66.66%; height: 400px;
-        float: left;
-        padding-top: 100px; padding-left: 20px;
-        box-sizing: border-box;
-        background: rgba(255, 255, 255, 0.3);
-      }
-			h1{font-family: 'Righteous', cursive; }
-			#text{font-family: 'Alegreya Sans', sans-serif;}
-
-	  #pic{
-        width:33.33%; height: 400px;
-        float: left;
-		background: url(./images/main_pic.jpg) center;
-		transition: 1s;
-      }
-
-		#pic:hover{
-			background: url(./images/h_main_pic.jpg) center /cover;
-		}
-
-      footer{
-        width: 33.33%; height: 50px;
-        margin: 0 auto;
-        clear:both;
-		position: relative;
-      }
-	   footer h5{
-			position: absolute;
-			top: 16px;
-			font-family: 'Alegreya Sans', sans-serif;
-			text-align: center;
-	   }
-	</style>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" href="./images/favicon.png"/>
+  <link rel="stylesheet" href="./css/style2.css"/>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>홈페이지</title>
 </head>
 <body>
-  <div class="wrap">
-    <div class="main_bg"></div>
-    <div class="main_box">
-      <nav>
-        <a href="https://buzzuin.github.io/begin/"><img class="icon icon1" src="./images/icon_home.png" alt=""></a>
-        <a href="https://buzzuin.github.io/study_shinhwaweb/"><img class="icon icon2" src="./images/icon_study.png" alt=""></a>
-        <a href="#"><img class="icon icon3" src="./images/icon_chat.png" alt=""></a>
-        <a href="#"><img class="icon icon4" src="./images/icon_design.png" alt=""></a>
-      </nav>
-      <section id="intro">
-        <h1>HELLO WORLD</h1></br></br>
-        <p id="text">A chapter of learning</p>
-      </section>
-      <section id="pic">  </section>
-      <footer><h5>Copyright &copy;2019 HELLO WORLD All right reserved.</h5></footer>
-    </div>
+  <div class="wrapper">
+
+    <!--header-->
+    <header>
+     	<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">MENU</a>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">LANDING</a></li>
+					<li><a href="#">GENERIC</a></li>
+					<li><a href="#">ELEMENTS</a></li>
+					<li><a href="#">GET STARTED</a></li>
+					<li><a href="#">LOG IN</a></li>
+				</ul>
+			</li>
+		</ul>
+
+    </header>
+
+	<div class="fake_header"></div>
+
+    <!--navigation main/character-->
+    <nav>
+      <div class="main">
+        <div class="maindoor">Hello ABCD</div>
+        <div class="mainscript"><br>This is blah blah</div>
+      </div>
+      <div class="main_char">
+
+        <!--main_char : ironman-->
+        <div class="ironman_wrap">
+    			<div class="window">
+  				  <div class="helmet">
+    					<div class="helmet_in"></div>
+    					<div class="helmet_mouth"></div>
+    		  	</div>
+    				<div class="armor">
+    					<div class="acro"></div>
+    					<div class="forearm left"></div>
+    					<div class="forearm right"></div>
+    				</div>
+    				<div class="thigh">
+    					<div class="calf left"></div>
+    					<div class="calf right"></div>
+    				</div>
+    				<div class="fire"></div>
+    			</div>
+    		</div>
+      </div>
+    </nav>
+
+    <!--section study-->
+    <section class="study">
+
+      <!--study minions-->
+      <div class="box box1">
+        <div class="minions_wrap">
+
+      		<svg class="h1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      		 width="80px" height="80px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+      			<path style="fill:#33CCCC" d="M150.25,145.5C150.111,107.909,203,107.517,203,144s-50.861,65.504-50.861,65.504
+      		S97.5,181.483,97.5,145S150.25,109.017,150.25,145.5"/></svg>
+      		<svg class="h2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      		 width="80px" height="80px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+      			<path style="fill:#33CCCC" d="M150.25,145.5C150.111,107.909,203,107.517,203,144s-50.861,65.504-50.861,65.504
+      		S97.5,181.483,97.5,145S150.25,109.017,150.25,145.5"/></svg>
+      		<div class="body">
+      			<div class="eye left"></div>
+      			<div class="eye right"></div>
+      			<div class="mouth"></div>
+      			<div class="pants">
+      				<div class="top"></div>
+      				<div class="leg left">
+      					<div class="foot"></div>
+      				</div>
+      				<div class="leg right">
+      					<div class="foot"></div>
+      				</div>
+      			</div>
+      			<div class="arm left">
+      				<div class="fist"></div>
+      			</div>
+      			<div class="arm right">
+      				<div class="fist"></div>
+      			</div>
+      			<div class="logo">
+      				<div class="logo_in"></div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+
+      <div class="box box2">3d cube</div>
+
+	  <!-- study bubble -->
+      <div class="box box3">
+		<div class="deepsea">
+			<div class="bubble"></div>
+			<div class="title">BUBBLE</div>
+		</div>
+	 </div>
+
+      <div class="box box4">
+		<a href="#" class="take">TAKE</a>
+	</div>
+      <div class="box box5">tape record</div>
+      <div class="box box6">윤은지 name</div>
+      <div class="box other">설명과 홈페이지 바로가기
+        <ul id="woowa_nike">
+          <li>
+            <a href="./pages/woowa_nike/index_woowa_nike.html" target="blank">
+              우아한나이키
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <!--section board-->
+    <section class="board">
+      <div class="guestbook"></div>
+      <div class="contact"></div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      icon
+    </footer>
   </div>
-
-
-
-
-
 </body>
 </html>
